@@ -1,0 +1,7 @@
+div
+   form(name='newCaseForm')
+     input.form-control(type='text' ng-model='name' required='' style={'margin':'10px','padding':'5px','width':'calc(100% - (10px + 5px) * 2)'} placeholder='用户名')
+     input.form-control(type='password' ng-model='password' required='' style={'margin':'10px','padding':'5px','width':'calc(100% - 30px)'} placeholder='密码')
+   div(style={'text-align': 'right','margin': '10px 20px'})   
+     button(class='btn btn-default' style={'margin-right':'10px'} ng-click='cancel()') 取消
+     button(ng-class='{true:"btn btn-primary btn-valid", false:"btn btn-primary disabled btn-disabled"}[newCaseForm.$valid]' ng-click='confirm()') 确定

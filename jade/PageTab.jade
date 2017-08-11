@@ -1,0 +1,12 @@
+.titlebar
+   span(style={'width':'100px','position':'relative','top':'10px'},'ui-sref'='PageTab.page','ng-class'="{active:('PageTab.page'|includedByState)}") 
+       a(style={'cursor':'pointer','color':'#fff','padding':'10px','font-size':'18px'}) page
+   span(style={'width':'100px','position':'relative','top':'10px'},'ng-click'='creatModal()') 
+       a(style={'cursor':'pointer','color':'#fff','padding':'10px','font-size':'18px'}) modal
+   span(style={'width':'100px','position':'relative','top':'10px'},'ui-sref'='PageTab.uiGrid' 'ui-sref-active'='active') 
+       a(style={'cursor':'pointer','color':'#fff','padding':'10px','font-size':'18px'}) uiGrid
+   span(style={float:'right'})
+       i.iconfont.icon-min(style={color:'#fff'} 'ng-click'='exitFull()') 
+       i.iconfont.icon-maxmize(style={color:'#fff'} 'ng-click'='full()') 
+       i.iconfont.icon-close(style={color:'#fff'} 'ng-click'='closeWindow()')
+div('ui-view'='')

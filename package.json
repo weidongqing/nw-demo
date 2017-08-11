@@ -1,0 +1,22 @@
+{
+  "name": "nw-demo",
+  "main": "index.html",
+  "description": "demo app of node-webkit",
+  "version": "0.1.0",
+  "window": {
+    "title": "node-webkit demo",
+    "icon": "lib/img/logo.png",
+    "position": "center",
+    "resizable": true,
+    "show": true,
+    "frame": false,
+    "width": 1280,
+    "height": 760,
+    "min_width": 1280,
+    "min_height": 760,
+    "transparent": true
+  },
+  "webkit": {
+    "plugin": true
+  }
+}
